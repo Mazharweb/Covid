@@ -1,0 +1,63 @@
+body{
+    background:url("https://www.oie.int/app/uploads/2021/04/microsoftteams-image-1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing:border-box
+}
+.container-fluid{
+    width:90%;
+    margin: auto;
+    
+}
+.heading>h1{
+    color:white;
+    text-align: center;
+}
+.table-responsive{
+    max-height: 700px;
+    box-shadow: 2px 2px 4px rgb(34, 28, 28);
+}
+tr:hover{
+    background-color: #ffa;
+}
+td,
+th{
+    position: relative;
+}
+.table td,
+.table th{
+    padding:0.7rem;
+    vertical-align: top;
+    border-top: none;
+}
+td:hover::after,
+td:hover::after{
+    content: "";
+    position: absolute;
+    background-color: #f2f2f2;
+    left:0;
+    z-index: -1;
+    top:-5000px;
+    height:5000px;
+    width:100%
+}
+.thead-dark{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.table tr td:hover:nth-child(4){
+    background-color: rgb(35, 66, 35);
+    color: aliceblue;
+    border:0.5px solid rgb(43, 36, 36)
+}
+.table tr td:hover{
+    background-color: rgb(95, 15, 15);
+    color:aliceblue;
+    border:2px solid rgb(24, 21, 21);
+}
